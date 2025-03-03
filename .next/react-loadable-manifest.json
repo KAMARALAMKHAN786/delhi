@@ -32,5 +32,11 @@
     "files": [
       "static/chunks/node_modules_next_dist_pages__error_js.js"
     ]
+  },
+  "pages\\index.tsx -> ../components/card": {
+    "id": "pages\\index.tsx -> ../components/card",
+    "files": [
+      "static/chunks/src_components_card_tsx.js"
+    ]
   }
 }

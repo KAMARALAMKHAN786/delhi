@@ -9,12 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Us Section */}
           <div className="space-y-4">
-            <h3 className="text-white font-bold text-lg">About Dehi escort</h3>
+            <h3 className="text-white font-bold text-lg">About Delhi escort</h3>
             <p className="text-sm">
               Delhi Escort is the first choice for those passionate about premium escort services. We provide professional, authentic, and unforgettable experiences tailored to your desires.
             </p>
             <p className="text-sm">
-              Whether you're looking for hot, gorgeous, sophisticated, or glamorous escorts in Dubai, Dehi escort is your ultimate destination.
+              Whether you're looking for hot, gorgeous, sophisticated, or glamorous escorts in Delhi, Dehi escort is your ultimate destination.
             </p>
           </div>
 

@@ -260,7 +260,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false, // Disable fallback for static export
+    fallback: 'blocking', // Use 'blocking' to enable ISR
   };
 };
 
@@ -283,7 +283,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       listing,
-    }
+    },
+    revalidate: 10, // Revalidate the page every 10 seconds
   };
 };
 
