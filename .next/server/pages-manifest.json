@@ -1,7 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/listings/[id]": "pages/listings/[id].js"
-}
+{"/_app":"pages/_app.js","/AdminLogin":"pages/AdminLogin.html","/AdminDashboard":"pages/AdminDashboard.html","/_document":"pages/_document.js","/admin-dashboard":"pages/admin-dashboard.html","/admin":"pages/admin.html","/admin/blog-posts":"pages/admin/blog-posts.html","/CreateListing":"pages/CreateListing.html","/Register":"pages/Register.html","/BlogPostDetails":"pages/BlogPostDetails.html","/api/blog-posts":"pages/api/blog-posts.js","/ListingDetails":"pages/ListingDetails.html","/dashboard":"pages/dashboard.html","/create-listing":"pages/create-listing.html","/":"pages/index.html","/login":"pages/login.html","/_error":"pages/_error.js","/blog/[id]":"pages/blog/[id].js","/AdminBlogPosts":"pages/AdminBlogPosts.js","/listings/[id]":"pages/listings/[id].js","/404":"pages/404.html"}
