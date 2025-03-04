@@ -50,8 +50,6 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{listing.title} - UAE Escorts</title>
         <meta name="description" content={listing.description.substring(0, 160)} />
         <meta property="og:title" content={listing.title} />
@@ -82,7 +80,7 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <Link href="/listings" className="ml-1 text-sm font-medium text-white hover:text-gray-900 md:ml-2">
+                  <Link href="/" className="ml-1 text-sm font-medium text-white hover:text-gray-900 md:ml-2">
                     Listings
                   </Link>
                 </div>
@@ -96,7 +94,7 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="ml-1 text-sm font-medium text-white md:ml-2">{listing.title}</span>
+                    <span className="ml-1 text-sm font-medium text-white md:ml-2 truncate">{listing.title}</span>
                 </div>
               </li>
             </ol>
@@ -142,7 +140,7 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
             {/* Right Section - Profile Details */}
             <div className="flex-1 space-y-4">
               {/* Title */}
-              <h1 className="text-4xl font-bold text-white">{listing.title}</h1>
+              <h1 className="text-3xl font-bold text-white">{listing.title}</h1>
               
               {/* About */}
               <div>
@@ -260,7 +258,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: 'blocking', // Use 'blocking' to enable ISR
+    fallback: false, // Disable fallback for static export
   };
 };
 

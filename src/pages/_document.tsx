@@ -7,7 +7,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+          <meta name="description" content="Delhi Escort offers premium escort services with a focus on professionalism, authenticity, and unforgettable experiences." />
+<meta name="keywords" content="Delhi Escort, premium escorts, escort services, Delhi, model escorts" />
+          <link rel="canonical" href="https://www.delhi-escorts.com" />
         </Head>
         <body>
           <Main />
