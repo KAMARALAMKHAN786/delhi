@@ -169,9 +169,13 @@ const Home: React.FC = () => {
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 mb-6 grid grid-cols-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,1fr)] gap-6">
           {/* Listings Section */}
           <div>
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-white bg-gray-800 bg-opacity-50 inline-block p-2 rounded-md">
+            <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 text-white bg-gray-800 bg-opacity-50 inline-block p-2 rounded-md">
             Welcome to Delhi Escorts
             </h2>
+            <p className="text-gray-200 mb-10  text-justify sm:text-left">
+            Explore the leading escort directory in the UAE, known for its reliability and popularity. As specialists in adult classifieds, we are dedicated to enhancing your experience, making it easy and efficient to find the perfect companion. We understand that choosing the right partner from the many listings in Dubai can be challenging. That’s why we carefully review each profile and provide advanced filters to help you make the best choice. Discover both independent courtesans and agencies in Dubai, and have a safe and enjoyable experience!
+            </p>
+                
             <Suspense fallback={<LoadingSpinner />}>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {listings.map((listing) => (
