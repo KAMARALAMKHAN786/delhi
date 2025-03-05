@@ -1,4 +1,4 @@
-Tree structure of: F:\UAE PROJECT\27feb25Delhi_alldone\23_feb_done_dynamic\21feb_build_stuck\21feb_12_latestblog_done
+Tree structure of: F:\UAE PROJECT\03march_updated\21feb_build_stuck\21feb_12_latestblog_done
 
 ├── .bolt/
     ├── config.json
@@ -8,12 +8,16 @@ Tree structure of: F:\UAE PROJECT\27feb25Delhi_alldone\23_feb_done_dynamic\21feb
 ├── .eslintignore
 ├── .eslintrc.build.json
 ├── .gitignore
+├── .vercel/
+    ├── README.txt
+    ├── project.json
 ├── .vscode/
     ├── extensions.json
     ├── settings.json
 ├── 26out.zip
 ├── 27FEB.zip
 ├── 27feb2.zip
+├── README.md
 ├── build.sh
 ├── classifieds-website@0.0.0
 ├── delhi_ou27.zip
@@ -149,11 +153,11 @@ Tree structure of: F:\UAE PROJECT\27feb25Delhi_alldone\23_feb_done_dynamic\21feb
         ├── register_icon.png
         ├── register_icon2.png
     ├── components/
+        ├── Card.tsx
         ├── Footer.tsx
         ├── Header.tsx
         ├── LoadingSpinner.tsx
         ├── NewsletterSubscription.tsx
-        ├── card.tsx
     ├── context/
         ├── AuthContext.tsx
     ├── hooks/

@@ -64,8 +64,8 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
       <div className="min-h-screen bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Breadcrumb */}
-          <nav className="flex mb-6 text-white" aria-label="Breadcrumb">
-            <ol className="inline-flex items-center space-x-1 md:space-x-3">
+          <nav className="flex mb-6 text-white overflow-x-auto" aria-label="Breadcrumb">
+            <ol className="inline-flex items-center space-x-1 md:space-x-3 whitespace-nowrap">
               <li className="inline-flex items-center">
                 <Link href="/" className="text-gray-white hover:text-gray-900">
                   Home
@@ -94,7 +94,9 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
                       clipRule="evenodd"
                     />
                   </svg>
-                    <span className="ml-1 text-sm font-medium text-white md:ml-2 truncate">{listing.title}</span>
+                  <span className="ml-1 text-sm font-medium text-white md:ml-2 truncate max-w-[150px] sm:max-w-none">
+                    {listing.title}
+                  </span>
                 </div>
               </li>
             </ol>
@@ -140,7 +142,7 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
             {/* Right Section - Profile Details */}
             <div className="flex-1 space-y-4">
               {/* Title */}
-              <h1 className="text-3xl font-bold text-white">{listing.title}</h1>
+              <h1 className="text-3xl font-bold text-white break-words">{listing.title}</h1>
               
               {/* About */}
               <div>
@@ -170,7 +172,7 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
                     {/* Phone Number Link */}
                     <a 
                       href={`tel:${listing.phone}`} 
-                      className="text-blue-400 hover:text-blue-300 transition-colors"
+                      className="text-blue-400 hover:text-blue-300 transition-colors break-all text-sm"
                     >
                       {listing.phone}
                     </a>
@@ -205,7 +207,7 @@ const ListingDetails: React.FC<ListingDetailsProps> = ({ listing }) => {
                 {listing.email && (
                   <div>
                     <h3 className="font-semibold text-lg text-white">Email:</h3>
-                    <a href={`mailto:${listing.email}`} className="text-blue-500 hover:underline">
+                    <a href={`mailto:${listing.email}`} className="text-blue-500 hover:underline break-all">
                       {listing.email}
                     </a>
                   </div>

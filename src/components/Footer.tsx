@@ -98,11 +98,11 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-8 pt-6 border-t border-gray-800 text-center">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Delhi-escort.com All rights reserved. |
+            © {new Date().getFullYear()} delhi-escorts.com All rights reserved. |
             <a href="/terms" className="hover:text-white ml-2">Terms of Use</a> |
             <a href="/privacy" className="hover:text-white ml-2">Privacy Policy</a>
           </p>
-          <p className="text-sm text-gray-400 mt-2 text-balance">
+          <p className="text-sm text-gray-400 mt-2 text-justify">
           Delhi-Escorts is the first choice of people passionate about getting escort services. Delhi-Escorts provides professional escort services that will match your niche and whatever you are looking for in escorts. You will get here
 
 Are you looking for Hot, Gorgeous, Sophisticated, Glamorous, Stunning, Elegant, Captivating, Dazzling, Charming, Attractive, Striking, and Bewitching escorts in dubai? So, you come to the right place at Delhi-Escorts, and you will get everything that you desire. Delhi-Escorts provides top-notch escort quality services in dubai. You should check it out to learn more about Delhi-Escorts

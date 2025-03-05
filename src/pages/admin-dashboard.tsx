@@ -38,6 +38,7 @@ export default function AdminDashboard() {
 
     if (user) {
       fetchListings();
+      console.log('Current authenticated user:', user); // Log the authenticated user
     }
   }, [user, loading, router, filter, sortBy]);
 
@@ -57,6 +58,7 @@ export default function AdminDashboard() {
 
     if (error) {
       toast.error('Error fetching listings');
+      console.error('Error fetching listings:', error);
     } else {
       setListings(data || []);
     }
@@ -64,33 +66,41 @@ export default function AdminDashboard() {
   };
 
   const handleApprove = async (id: string) => {
+    console.log(`Approving listing with id: ${id}`);
     const listing = listings.find(l => l.id === id);
-    
-    const { error } = await supabase
+    console.log('Listing found:', listing);
+
+    const { data, error } = await supabase
       .from('listings')
       .update({ status: 'approved' })
       .eq('id', id);
 
     if (error) {
       toast.error('Error approving listing');
+      console.error('Error approving listing:', error);
     } else {
       toast.success('Listing approved successfully');
+      console.log('Update response:', data);
       fetchListings();
     }
   };
 
   const handleReject = async (id: string) => {
+    console.log(`Rejecting listing with id: ${id}`);
     const listing = listings.find(l => l.id === id);
-    
-    const { error } = await supabase
+    console.log('Listing found:', listing);
+
+    const { data, error } = await supabase
       .from('listings')
       .update({ status: 'rejected' })
       .eq('id', id);
 
     if (error) {
       toast.error('Error rejecting listing');
+      console.error('Error rejecting listing:', error);
     } else {
       toast.success('Listing rejected successfully');
+      console.log('Update response:', data);
       fetchListings();
     }
   };

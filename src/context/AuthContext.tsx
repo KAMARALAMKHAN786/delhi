@@ -53,15 +53,18 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   };
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      console.log('Session:', session);
+    const initializeSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      console.log('Initial Session:', session);
       setUser(session?.user ?? null);
       if (session?.user) {
         fetchUserProfile(session.user.id);
         startSessionTimer();
       }
       setLoading(false);
-    });
+    };
+
+    initializeSession();
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       console.log('Auth State Changed:', session);
@@ -71,17 +74,15 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         startSessionTimer();
       } else {
         setProfile(null);
+        clearTimeout(sessionTimer);
       }
     });
 
-    return () => subscription.unsubscribe();
+    return () => {
+      subscription?.unsubscribe();
+      clearTimeout(sessionTimer);
+    };
   }, []);
-
-  useEffect(() => {
-    if (user) {
-      startSessionTimer();
-    }
-  }, [user]);
 
   const resetTimer = useCallback(() => {
     clearTimeout(sessionTimer);

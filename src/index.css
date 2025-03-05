@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 /* Add the background image */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 body {
   /* background-image: url('/background.webp'); */
   background-color: #33343b;
@@ -10,16 +18,12 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -29,19 +33,17 @@ code {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  flex: 1;
+  overflow: auto;
 }
+
 header {
   background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
   z-index: 1000; /* Ensure header is on top */
-  top:0;
+  top: 0;
   position: sticky;
-}
-
-/* Ensure the content is scrollable over the fixed background */
-.main-content {
-  flex: 1;
-  overflow: auto;
+  width: 100%; /* Ensure the header takes full width */
 }
 
 .lcp-heading {

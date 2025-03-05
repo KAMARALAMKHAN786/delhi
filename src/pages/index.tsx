@@ -150,7 +150,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-      <title>Premium Delhi Escorts & Call Girls | 24/7 In-Call Services Available</title>
+        <title>Premium Delhi Escorts & Call Girls | 24/7 In-Call Services Available</title>
         <meta name="description" content="Browse the latest listings and blog posts." />
         <meta property="og:title" content="Latest Listings - Home" />
         <meta property="og:description" content="Browse the latest listings and blog posts." />
@@ -166,14 +166,14 @@ const Home: React.FC = () => {
         {/* <meta property="og:type" content="website"/>  */}
       </Head>
       <div className="main-content">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 mb-6 grid grid-cols-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,1fr)] gap-6">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 mb-6 grid grid-cols-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,1fr)] gap-6 overflow-x-hidden">
           {/* Listings Section */}
           <div>
             <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 text-white bg-gray-800 bg-opacity-50 inline-block p-2 rounded-md">
-            Welcome to Delhi Escorts
+              Welcome to Delhi Escorts
             </h2>
-            <p className="text-gray-200 mb-10  text-justify sm:text-left">
-            Explore the leading escort directory in the UAE, known for its reliability and popularity. As specialists in adult classifieds, we are dedicated to enhancing your experience, making it easy and efficient to find the perfect companion. We understand that choosing the right partner from the many listings in Dubai can be challenging. That’s why we carefully review each profile and provide advanced filters to help you make the best choice. Discover both independent courtesans and agencies in Dubai, and have a safe and enjoyable experience!
+            <p className="text-gray-200 mb-10 text-justify sm:text-left">
+              Explore the leading escort directory in the Delhi, known for its reliability and popularity. As specialists in adult classifieds, we are dedicated to enhancing your experience, making it easy and efficient to find the perfect companion. We understand that choosing the right partner from the many listings in Delhi can be challenging. That’s why we carefully review each profile and provide advanced filters to help you make the best choice. Discover both independent courtesans and agencies in Delhi, and have a safe and enjoyable experience!
             </p>
                 
             <Suspense fallback={<LoadingSpinner />}>
